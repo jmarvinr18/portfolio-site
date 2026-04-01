@@ -10,13 +10,13 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Alex Rivera — DevSecOps & Software Engineer',
+      title: 'Jose Marvin Ramoda — DevSecOps & Software Engineer',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content: 'Portfolio of Alex Rivera, a DevSecOps and Software Engineer specializing in cloud security, CI/CD pipelines, and full-stack development.',
+          content: 'Portfolio of Jose Marvin Ramoda, a DevSecOps and Software Engineer specializing in cloud security, CI/CD pipelines, and full-stack development.',
         },
         { name: 'theme-color', content: '#0a0d12' },
       ],

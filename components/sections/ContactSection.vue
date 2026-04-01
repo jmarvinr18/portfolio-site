@@ -3,19 +3,19 @@ const links = [
   {
     icon: 'bi-envelope-fill',
     label: 'Email',
-    value: 'alex@example.com',
-    href: 'mailto:alex@example.com',
+    value: 'jmarvinr18@example.com',
+    href: 'mailto:jmarvinr18@example.com',
   },
   {
     icon: 'bi-github',
     label: 'GitHub',
-    value: 'github.com/alexrivera',
+    value: 'github.com/jmarvinr18',
     href: 'https://github.com',
   },
   {
     icon: 'bi-linkedin',
     label: 'LinkedIn',
-    value: 'linkedin.com/in/alexrivera',
+    value: 'linkedin.com/in/jmarvinr18',
     href: 'https://linkedin.com',
   },
   {

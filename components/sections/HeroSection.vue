@@ -50,7 +50,7 @@ onUnmounted(() => { if (typingTimer) clearTimeout(typingTimer) })
       <!-- Left: Text content -->
       <div>
         <span class="hero-label">// hello world</span>
-        <h1 class="hero-name">Alex Rivera</h1>
+        <h1 class="hero-name">Jose Marvin Ramoda</h1>
         <p class="hero-title">DevSecOps Engineer &amp; Software Developer</p>
         <p class="hero-tagline">
           <span class="typed-text">{{ typedText }}</span><span class="cursor" aria-hidden="true">_</span>
@@ -73,17 +73,17 @@ onUnmounted(() => { if (typingTimer) clearTimeout(typingTimer) })
             <span class="terminal-dot" style="background: #f59e0b" />
             <span class="terminal-dot" style="background: #22c55e" />
           </div>
-          <span class="hero-terminal-title">bash — alex@devsecops</span>
+          <span class="hero-terminal-title">bash — jmarvin@devsecops</span>
         </div>
         <div class="hero-terminal-body">
           <div>
-            <span class="t-prompt">alex@devsecops:~$</span>
+            <span class="t-prompt">jmarvin@devsecops:~$</span>
             <span class="t-cmd"> whoami</span>
           </div>
-          <div class="t-output t-success">DevSecOps Engineer &amp; Software Developer</div>
+          <div class="t-output t-success">Jose Marvin Ramoda — DevSecOps Engineer</div>
           <br>
           <div>
-            <span class="t-prompt">alex@devsecops:~$</span>
+            <span class="t-prompt">jmarvin@devsecops:~$</span>
             <span class="t-cmd"> git status</span>
           </div>
           <div class="t-output t-success">✓ all security checks passed</div>
@@ -91,7 +91,7 @@ onUnmounted(() => { if (typingTimer) clearTimeout(typingTimer) })
           <div class="t-output t-success">✓ compliance gates: OK</div>
           <br>
           <div>
-            <span class="t-prompt">alex@devsecops:~$</span>
+            <span class="t-prompt">jmarvin@devsecops:~$</span>
             <span class="t-cmd"> kubectl get pods -n prod</span>
           </div>
           <div class="t-output t-muted">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READY&nbsp;&nbsp;STATUS</div>
@@ -99,7 +99,7 @@ onUnmounted(() => { if (typingTimer) clearTimeout(typingTimer) })
           <div class="t-output">worker-7c8d9f-m3q1&nbsp;&nbsp;<span class="t-success">1/1</span>&nbsp;&nbsp;&nbsp;&nbsp;Running</div>
           <br>
           <div>
-            <span class="t-prompt">alex@devsecops:~$</span>
+            <span class="t-prompt">jmarvin@devsecops:~$</span>
             <span class="t-cursor">█</span>
           </div>
         </div>

@@ -29,7 +29,7 @@ function getAnchor(href: string) {
   <nav :class="['site-nav', { scrolled: isScrolled }]" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        AR<span>.</span>dev
+        JMR<span>.</span>dev
       </a>
 
       <ul class="nav-links" role="list">
