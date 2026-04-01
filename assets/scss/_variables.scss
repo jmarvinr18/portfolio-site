@@ -1,0 +1,37 @@
+// ── Colors ───────────────────────────────────────────────────────────────────
+$color-bg:        #0a0d12;
+$color-surface:   #10151e;
+$color-surface-2: #171d29;
+$color-border:    #1e2535;
+$color-accent:    #00e5b0;
+$color-accent-dim:#009e7a;
+$color-text:      #e2e8f0;
+$color-muted:     #64748b;
+$color-warning:   #f59e0b;
+
+// ── Typography ────────────────────────────────────────────────────────────────
+$font-display: 'JetBrains Mono', 'Fira Code', monospace;
+$font-body:    'DM Sans', system-ui, sans-serif;
+
+// ── Spacing ───────────────────────────────────────────────────────────────────
+$section-py: 6rem;
+
+// ── Bootstrap Overrides ───────────────────────────────────────────────────────
+$body-bg:               $color-bg;
+$body-color:            $color-text;
+$primary:               $color-accent;
+$font-family-base:      $font-body;
+$border-color:          $color-border;
+$card-bg:               $color-surface;
+$card-border-color:     $color-border;
+$link-color:            $color-accent;
+$link-hover-color:      lighten($color-accent, 10%);
+$border-radius:         0.25rem;
+$border-radius-lg:      0.375rem;
+$input-bg:              $color-surface-2;
+$input-border-color:    $color-border;
+$input-color:           $color-text;
+$input-focus-bg:        $color-surface-2;
+$input-focus-border-color: rgba($color-accent, 0.5);
+$input-focus-box-shadow: 0 0 0 0.2rem rgba($color-accent, 0.1);
+$input-placeholder-color: $color-muted;

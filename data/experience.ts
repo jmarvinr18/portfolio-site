@@ -1,0 +1,56 @@
+import type { WorkExperience } from '~/types'
+
+export const experience: WorkExperience[] = [
+  {
+    id: 'job-1',
+    company: 'Cloudfront Security',
+    role: 'Senior DevSecOps Engineer',
+    type: 'full-time',
+    startDate: '2022-06',
+    endDate: null,
+    location: 'San Francisco, CA',
+    remote: true,
+    highlights: [
+      'Integrated SAST/DAST tooling into CI/CD pipelines, reducing vulnerability lead time by 40%',
+      'Designed and maintained IaC (Terraform) for AWS infrastructure across 3 environments',
+      'Led container security hardening for Kubernetes workloads aligned to CIS Benchmarks',
+      'Built automated compliance dashboards in Python + Grafana, enabling real-time SOC 2 reporting',
+      'Implemented secrets management strategy with HashiCorp Vault across 12 microservices',
+    ],
+    tags: ['AWS', 'Terraform', 'Kubernetes', 'GitLab CI', 'Python', 'Docker', 'Vault'],
+  },
+  {
+    id: 'job-2',
+    company: 'NexGen Systems',
+    role: 'DevOps Engineer',
+    type: 'full-time',
+    startDate: '2020-03',
+    endDate: '2022-05',
+    location: 'Austin, TX',
+    remote: false,
+    highlights: [
+      'Built and maintained multi-region AWS infrastructure serving 2M+ daily active users',
+      'Automated deployment pipelines with GitHub Actions, reducing release cycle from 2 weeks to 1 day',
+      'Implemented GitOps workflow with ArgoCD for 30+ microservices on Kubernetes',
+      'Established security scanning baseline using Trivy, Snyk, and SonarQube',
+    ],
+    tags: ['AWS', 'GitHub Actions', 'ArgoCD', 'Kubernetes', 'Snyk', 'Terraform'],
+  },
+  {
+    id: 'job-3',
+    company: 'DataBridge Labs',
+    role: 'Software Engineer',
+    type: 'full-time',
+    startDate: '2018-07',
+    endDate: '2020-02',
+    location: 'New York, NY',
+    remote: false,
+    highlights: [
+      'Developed REST APIs in Go and Node.js powering a core B2B data pipeline product',
+      'Contributed to migration from monolith to microservices architecture',
+      'Built internal security tooling for automated dependency auditing and patch management',
+      'Reduced API response time by 35% through caching strategy and query optimization',
+    ],
+    tags: ['Go', 'Node.js', 'PostgreSQL', 'Docker', 'Redis', 'REST APIs'],
+  },
+]

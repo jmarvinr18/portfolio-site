@@ -1,0 +1,606 @@
+// ── Buttons ───────────────────────────────────────────────────────────────────
+.btn-accent {
+  background-color: $color-accent;
+  color: $color-bg;
+  font-family: $font-display;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  border: none;
+  padding: 0.625rem 1.5rem;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  transition: background-color 0.2s, transform 0.15s;
+
+  &:hover, &:focus {
+    background-color: $color-accent-dim;
+    color: $color-bg;
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 3px;
+  }
+}
+
+.btn-outline-accent {
+  border: 1px solid $color-accent;
+  color: $color-accent;
+  font-family: $font-display;
+  font-size: 0.8125rem;
+  background: transparent;
+  padding: 0.625rem 1.5rem;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  transition: background-color 0.2s, transform 0.15s;
+
+  &:hover, &:focus {
+    background-color: rgba($color-accent, 0.1);
+    color: $color-accent;
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 3px;
+  }
+}
+
+// ── Skill Badge ───────────────────────────────────────────────────────────────
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: $color-accent;
+  background: rgba($color-accent, 0.07);
+  border: 1px solid rgba($color-accent, 0.18);
+  border-radius: 2px;
+  padding: 0.2em 0.6em;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+// ── Section Layout ────────────────────────────────────────────────────────────
+.portfolio-section {
+  padding: $section-py 0;
+  border-bottom: 1px solid $color-border;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.section-header {
+  margin-bottom: 3.5rem;
+}
+
+// ── Placeholder Image Base ────────────────────────────────────────────────────
+.img-placeholder {
+  border-radius: $border-radius;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-surface-2;
+  border: 1px solid $color-border;
+}
+
+// ── Terminal (Hero) ───────────────────────────────────────────────────────────
+.hero-terminal {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: $font-display;
+  font-size: 0.8125rem;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.5);
+}
+
+.hero-terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: $color-surface-2;
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid $color-border;
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hero-terminal-title {
+  font-size: 0.6875rem;
+  color: $color-muted;
+  letter-spacing: 0.04em;
+  flex: 1;
+  text-align: center;
+}
+
+.hero-terminal-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+  line-height: 1.9;
+  color: $color-text;
+}
+
+.t-prompt { color: $color-accent; }
+.t-cmd    { color: $color-text; }
+.t-output { color: darken($color-text, 20%); padding-left: 0; }
+.t-success { color: $color-accent; }
+.t-muted  { color: $color-muted; }
+
+.t-cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+  color: $color-accent;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+// ── Timeline (Experience) ─────────────────────────────────────────────────────
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    bottom: 0;
+    width: 1px;
+    background: $color-border;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 3rem;
+
+  &:last-child { padding-bottom: 0; }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0.6rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $color-accent;
+    transform: translateX(-3px);
+    box-shadow: 0 0 8px rgba($color-accent, 0.5);
+  }
+}
+
+.timeline-role {
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  color: $color-accent;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.125rem;
+}
+
+.timeline-company {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: $color-text;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-meta {
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  color: $color-muted;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.timeline-badge {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: 2px;
+  font-size: 0.625rem;
+  padding: 0.1em 0.5em;
+  color: $color-muted;
+  font-family: $font-display;
+  letter-spacing: 0.05em;
+}
+
+.timeline-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+
+  li {
+    position: relative;
+    padding-left: 1.125rem;
+    color: rgba($color-text, 0.7);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    margin-bottom: 0.375rem;
+
+    &::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: $color-accent;
+      font-weight: 700;
+    }
+  }
+}
+
+// ── Skill Category Card ───────────────────────────────────────────────────────
+.skill-category-card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-lg;
+  padding: 1.75rem;
+  height: 100%;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: rgba($color-accent, 0.3);
+  }
+}
+
+.skill-category-icon {
+  font-size: 1.375rem;
+  color: $color-accent;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+
+.skill-category-label {
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $color-muted;
+  margin-bottom: 1.25rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+// ── Education ─────────────────────────────────────────────────────────────────
+.edu-placeholder {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 6px;
+  background: rgba($color-accent, 0.07);
+  border: 1px solid rgba($color-accent, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: $color-accent;
+}
+
+.edu-card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-left: 2px solid $color-accent;
+  border-radius: 0 $border-radius-lg $border-radius-lg 0;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: rgba($color-accent, 0.4);
+    border-left-color: $color-accent;
+  }
+}
+
+.edu-degree {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $color-text;
+  margin-bottom: 0.125rem;
+}
+
+.edu-field {
+  font-size: 0.9375rem;
+  color: rgba($color-text, 0.65);
+  margin-bottom: 0.375rem;
+}
+
+.edu-institution {
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  color: $color-accent;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.edu-years {
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  color: $color-muted;
+}
+
+.edu-honors {
+  display: inline-flex;
+  align-items: center;
+  font-family: $font-display;
+  font-size: 0.625rem;
+  color: $color-warning;
+  background: rgba($color-warning, 0.08);
+  border: 1px solid rgba($color-warning, 0.2);
+  border-radius: 2px;
+  padding: 0.15em 0.5em;
+  letter-spacing: 0.06em;
+  margin-top: 0.375rem;
+}
+
+// ── Cert Card ────────────────────────────────────────────────────────────────
+.cert-card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-lg;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.15s;
+
+  &:hover {
+    border-color: rgba($color-accent, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+.cert-badge-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: rgba($color-accent, 0.08);
+  border: 1px solid rgba($color-accent, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  color: $color-accent;
+  margin-bottom: 1rem;
+}
+
+.cert-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: $color-text;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+  flex: 1;
+}
+
+.cert-issuer {
+  font-family: $font-display;
+  font-size: 0.6875rem;
+  color: $color-muted;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+
+.cert-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.75rem;
+  border-top: 1px solid $color-border;
+  margin-top: auto;
+}
+
+.cert-date {
+  font-family: $font-display;
+  font-size: 0.625rem;
+  color: $color-muted;
+  letter-spacing: 0.04em;
+}
+
+.cert-expiry-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: $font-display;
+  font-size: 0.5625rem;
+  font-weight: 700;
+  padding: 0.2em 0.55em;
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &.valid         { color: $color-accent; background: rgba($color-accent, 0.1); border: 1px solid rgba($color-accent, 0.2); }
+  &.expiring-soon { color: $color-warning; background: rgba($color-warning, 0.1); border: 1px solid rgba($color-warning, 0.2); }
+  &.expired       { color: $color-muted; background: rgba($color-muted, 0.08); border: 1px solid rgba($color-muted, 0.15); }
+  &.no-expiry     { color: $color-muted; background: transparent; border: 1px solid $color-border; }
+}
+
+// ── Project Card ─────────────────────────────────────────────────────────────
+.project-card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.15s;
+
+  &:hover {
+    border-color: rgba($color-accent, 0.35);
+    transform: translateY(-3px);
+  }
+}
+
+.project-img-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  .project-img-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: rgba($color-accent, 0.25);
+    transition: color 0.2s;
+  }
+
+  &:hover .project-img-inner {
+    color: rgba($color-accent, 0.4);
+  }
+}
+
+.project-img-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba($color-accent, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba($color-accent, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.project-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-type-label {
+  font-family: $font-display;
+  font-size: 0.5625rem;
+  color: $color-accent;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.375rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $color-text;
+  margin-bottom: 0.375rem;
+}
+
+.project-summary {
+  font-size: 0.875rem;
+  color: rgba($color-text, 0.6);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.875rem;
+  border-top: 1px solid $color-border;
+  margin-top: auto;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.875rem;
+
+  a {
+    color: $color-muted;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: $font-display;
+    font-size: 0.6875rem;
+    letter-spacing: 0.03em;
+
+    i { font-size: 0.875rem; }
+
+    &:hover { color: $color-accent; }
+    &:focus-visible { outline: 2px solid $color-accent; outline-offset: 2px; border-radius: 2px; }
+  }
+}
+
+// ── Contact Links ─────────────────────────────────────────────────────────────
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.125rem 1.5rem;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-lg;
+  color: $color-text;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+
+  &:hover {
+    border-color: rgba($color-accent, 0.4);
+    background: $color-surface-2;
+    color: $color-text;
+    transform: translateX(4px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
+  }
+
+  .contact-link-icon {
+    font-size: 1.25rem;
+    color: $color-accent;
+    width: 1.5rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .contact-link-label {
+    font-weight: 500;
+    font-size: 0.9375rem;
+    flex: 1;
+  }
+
+  .contact-link-value {
+    font-family: $font-display;
+    font-size: 0.75rem;
+    color: $color-muted;
+  }
+
+  i.contact-link-arrow {
+    color: $color-muted;
+    font-size: 0.75rem;
+    transition: color 0.2s;
+  }
+
+  &:hover i.contact-link-arrow {
+    color: $color-accent;
+  }
+}
+
+// ── Utilities ─────────────────────────────────────────────────────────────────
+.bg-surface   { background-color: $color-surface !important; }
+.bg-surface-2 { background-color: $color-surface-2 !important; }
+.border-accent { border-color: $color-accent !important; }
