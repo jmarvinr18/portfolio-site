@@ -87,6 +87,21 @@
   border: 1px solid $color-border;
 }
 
+// ── Hero Avatar ───────────────────────────────────────────────────────────────
+.hero-avatar-wrapper {
+  margin-bottom: 1.75rem;
+}
+
+.hero-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba($color-accent, 0.35);
+  box-shadow: 0 0 0 6px rgba($color-accent, 0.06), 0 8px 32px rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
 // ── Terminal (Hero) ───────────────────────────────────────────────────────────
 .hero-terminal {
   background: $color-surface;
