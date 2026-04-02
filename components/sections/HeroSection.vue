@@ -49,6 +49,15 @@ onUnmounted(() => { if (typingTimer) clearTimeout(typingTimer) })
     <div class="hero-inner">
       <!-- Left: Text content -->
       <div>
+        <div class="hero-avatar-wrapper">
+          <img
+            class="hero-avatar"
+            src="/images/profile-placeholder.svg"
+            alt="Jose Marvin Ramoda"
+            width="160"
+            height="160"
+          >
+        </div>
         <span class="hero-label">// hello world</span>
         <h1 class="hero-name">Jose Marvin Ramoda</h1>
         <p class="hero-title">DevSecOps Engineer &amp; Software Developer</p>
